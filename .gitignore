@@ -10,6 +10,8 @@
 *.xml
 main/main
 
+.idea
+
 easy-rv-c
 easy-rv-parser
 
