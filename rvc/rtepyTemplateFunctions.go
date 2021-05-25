@@ -26,8 +26,8 @@ func getCECCTransitionCondition(function rvdef.Monitor, trans string) CECCTransi
 	retVal := trans
 
 	//rename AND and OR
-	retVal = strings.Replace(retVal, "AND", "&&", -1)
-	retVal = strings.Replace(retVal, "OR", "||", -1)
+	retVal = strings.Replace(retVal, "AND", "and", -1) //FOR PYTHON
+	retVal = strings.Replace(retVal, "OR", "or", -1)   //FOR PYTHON
 
 	//re1: add whitespace around operators
 	retVal = re1.ReplaceAllStringFunc(retVal, func(in string) string {
